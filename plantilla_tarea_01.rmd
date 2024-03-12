@@ -1,0 +1,97 @@
+---
+title: "Tarea 1"
+author: "[indicar correo aqui]"
+output:
+  html_document
+---
+
+---
+
+* Recuerde... 
+     - no alterar el formato de este documento y responder en los espacios asignados
+     - descargar la base de datos y subirla a la nube de este proyecto
+
+¡Éxito!
+
+---
+
+# Ejercicio 1
+
+
+- Abra los datos `datos_acciones_colectivas.csv`, empleando la función `read.csv()`. Aloje los datos en un objeto llamado `base` .
+
+```{r}
+
+# Pegue los códigos utilizados en la siguiente línea [no coloque el signo gato antes de su respuesta]
+
+```
+
+# Ejercicio 2a
+
+- Inserte el código para abrir un resumen de su base de datos que muestre tipo de dato en cada columna, el numero de filas (casos en esta base) y de columnas (o variables en esta base).  
+
+```{r}
+# Pegue los códigos utilizados en la siguiente línea [no coloque el signo gato antes de su respuesta]
+
+```
+
+# Ejercicio 2b
+
+- Señale cuantos casos hay en la base de datos y cuantas variables.
+
+- Respuesta: 
+  + Casos: [escriba aquí la cantidad de casos, y borre los corchetes]
+  + Variables: [escriba aquí la cantidad de variables, y borre los corchetes]
+
+
+
+# Ejercicio 3
+
+- Ejecute los siguientes comandos reemplazando el valor ‘123456789’ por su Rut sin el dígito verificador para poder crear y guardar una submuestra de su base de datos. No altere el resto de los comandos.
+
+```{r}
+
+set.seed(123456789)
+
+indices_submuestra <- c(sample(which(base$sex == '1'), nrow(base)*.1), 
+                        sample(which(base$sex == '2'), nrow(base)*.1))
+submuestra <- base[indices_submuestra, ]     
+
+```
+
+# Ejercicio 4a
+
+- Inserte el código para abrir un resumen de su submuestra para ver el tipo de dato en cada columna, el numero de filas (casos en esta submuestra) y de columnas (o variables en esta submuestra).  
+
+
+```{r}
+# Pegue los códigos utilizados en la siguiente línea [no coloque el signo gato antes de su respuesta]
+
+
+```
+
+# Ejercicio 4b
+
+- Señale cuantos casos hay en la submuestra y cuantas variables.
+
+- Respuesta: 
+  + Casos: [escriba aquí la cantidad de casos, y borre los corchetes]
+  + Variables: [escriba aquí la cantidad de variables, y borre los corchetes]
+
+
+# Ejercicio 5
+
+- Genere una tabla que permita ver cuantos de los casos de la submuetra son hombres y cuantos mujeres.
+
+```{r}
+# Pegue los códigos utilizados en la siguiente línea [no coloque el signo gato antes de su respuesta]
+
+```
+
+# Ejercicio 6
+- Identifique y reporte el primer dato de la variable ‘sex’ en la submuestra
+
+```{r}
+# Escriba su respuesta aquí: 
+
+```
